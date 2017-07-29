@@ -7,7 +7,7 @@ export class AppService {
     }
 
     getUser() {
-        return this.http.get(`https://conduit.productionready.io/api/profiles/eric`)
+        return this._http.get(`https://conduit.productionready.io/api/profiles/eric`)
             .map((res: Response) => res.json());
     }
 
